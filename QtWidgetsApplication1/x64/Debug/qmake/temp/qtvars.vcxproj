@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\sceylan\source\projects\Qt_Examples\QtWidgetsApplication1\QtWidgetsApplication1\x64\Debug\qmake\temp;C:\Qt5\5.15.2\msvc2019_64\include;C:\Qt5\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt5\5.15.2\msvc2019_64\include\QtGui;C:\Qt5\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt5\5.15.2\msvc2019_64\include\QtCore;C:\Users\sceylan\source\projects\Qt_Examples\QtWidgetsApplication1\QtWidgetsApplication1\x64\Debug\qmake\temp;/include;C:\Qt5\5.15.2\msvc2019_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sceylan\source\repos\Qt_Examples\QtWidgetsApplication1\x64\Debug\qmake\temp;C:\Qt5\5.15.2\msvc2019_64\include;C:\Qt5\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt5\5.15.2\msvc2019_64\include\QtGui;C:\Qt5\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt5\5.15.2\msvc2019_64\include\QtCore;C:\Users\sceylan\source\repos\Qt_Examples\QtWidgetsApplication1\x64\Debug\qmake\temp;/include;C:\Qt5\5.15.2\msvc2019_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>.\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
