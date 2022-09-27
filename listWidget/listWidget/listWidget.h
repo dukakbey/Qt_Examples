@@ -15,7 +15,7 @@ public:
     ~listWidget();
 
 private slots:
-
+    void readDataBtn_clicked();
 private:
     Ui::listWidgetClass *ui;
     QStringList fruitList;

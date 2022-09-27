@@ -2,14 +2,16 @@
 #include "ui_listWidget.h"
 #include <QDebug>
 
-listWidget::listWidget(QWidget *parent)
-    : QWidget(parent)
+listWidget::listWidget(QWidget *parent): QWidget(parent)
     , ui(new Ui::listWidgetClass())
 {
     ui->setupUi(this);
     ui->listWidget->setIconSize(QSize(70, 70));
     
-    fruitList << "apple" << "banana" << "orange";
+    fruitList << "Apple" << "Avocado" << "Banana"
+        << "Blueberries" << "Cucumber" << "EggFruit"
+        << "Fig" << "Grape" << "Mango" << "Pear"
+        << "Pineapple" << "Watermellon";
 
     ui->listWidget->addItems(fruitList);
     for (int i = 0; i < ui->listWidget->count(); i++) {
@@ -25,4 +27,9 @@ listWidget::listWidget(QWidget *parent)
 listWidget::~listWidget()
 {
     delete ui;
+}
+
+void listWidget::readDataBtn_clicked()
+{
+    //QDebug("ok");
 }
