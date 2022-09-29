@@ -6,22 +6,12 @@ QtTable::QtTable(QWidget *parent)
 {
     ui->setupUi(this);
     displayTable();
-    //table.append({ "John","Doe","32","Farmer","Single","Gounduana","Mestkv","89" });
+    
     
 
 
-    //int rows = table.size();
-    //int columns = table[0].size();
-
-    //for (int row = 0; row < rows; row++) {
-    //    newRow();
-    //    for (int col = 0; col < columns; col++) {
-    //        //We are in a table cell
-    //        ui->tableWidget->item(row, col)->setText(table[row][col]);
-    //    }
-    //}
-
-    //ui->tableWidget->setAlternatingRowColors(true);
+    
+    ui->tableWidget->setAlternatingRowColors(true);
 
 }
 
@@ -37,7 +27,28 @@ void QtTable::displayTable()
     ui->tableWidget->setColumnCount(8);
     QStringList labels;
     labels << "First Name" << "Last Name" << "Age" << "Proffession" << "Marital Status" << "Country" << "City" << "Social Score";
+    table.append({ "John","Doe","32","Farmer","Single","Gounduana","Mestkv","89" });
+    table.append({ "Mary","Jane","27","Teacher","Married","Verkso","Tukk","55" });
+    table.append({ "John","Doe","32","Farmer","Single","Gounduana","Mestkv","67" });
+    table.append({ "Mary","Jane","27","Teacher","Married","Verkso","Tukk","78" });
+    table.append({ "John","Doe","32","Farmer","Single","Gounduana","Mestkv","51" });
+    table.append({ "Mary","Jane","27","Teacher","Married","Verkso","Tukk","83" });
+    table.append({ "John","Doe","32","Farmer","Single","Gounduana","Mestkv","59" });
+    table.append({ "Mary","Jane","27","Teacher","Married","Verkso","Tukk","62" });
+
     ui->tableWidget->setHorizontalHeaderLabels(labels);
+    
+    for (int i = 0; i < 8; i++)
+    {
+        for (int j = 0; j < 8; j++)
+        {
+            QTableWidgetItem* item = new QTableWidgetItem;
+            item->setText(table[j][i]);
+            ui->tableWidget->setItem(j, i, item);
+        }
+
+    }
+    
 
 }
 void QtTable::newRow()
